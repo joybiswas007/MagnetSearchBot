@@ -67,7 +67,7 @@ module.exports = (bot) => {
           parse_mode: "HTML",
         }
       );
-      if (search_engine === "1337x") {
+      if (search_engine === "1337X") {
         url = `${BASE_URL}1337x`;
       } else if (search_engine === "MagnetDL") {
         url = `${BASE_URL}magnetdl`;
