@@ -121,8 +121,7 @@ module.exports = (bot) => {
         return_content: true,
       });
       bot.deleteMessage(chat_id, message_id);
-      bot.sendMessage(chat_id, `<code>${paste.data.result.url}</code>`, {
-        parse_mode: "HTML",
+      bot.sendMessage(chat_id, `${paste.data.result.url}`, {
         reply_to_message_id: userMessageId,
       });
       await Counter.updateOne({}, { $inc: { count: 1 } }, { upsert: true });
