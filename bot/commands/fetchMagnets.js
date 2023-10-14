@@ -90,9 +90,19 @@ module.exports = (bot) => {
       } else if (search_engine === "TorrentGalaxy") {
         url = `${BASE_URL}torrentgalaxy`;
       }
-      const response = await axios.post(url, {
-        search,
-      });
+      const response = await axios.post(
+        url,
+        {
+          search,
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+            "User-Agent":
+              "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+          },
+        }
+      );
       const magnets = response.data
         .map(
           (magnet) => `
