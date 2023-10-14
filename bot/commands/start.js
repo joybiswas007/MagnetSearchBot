@@ -10,7 +10,7 @@ module.exports = (bot) => {
     try {
       bot.sendMessage(
         chatId,
-        `Hi, ${first_name}. I'm Magnet search bot. I'll find magnet links for your from public trackers. Try me\n<code>/search tenet </code> `,
+        `Hi, ${first_name}. I'm Magnets Fetcher bot. Try me\n<code>/search tenet </code> `,
         options
       );
     } catch (error) {
