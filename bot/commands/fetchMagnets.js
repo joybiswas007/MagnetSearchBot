@@ -93,7 +93,7 @@ module.exports = (bot) => {
       const response = await axios.post(
         url,
         {
-          search: search,
+          search,
         },
         {
           headers: {
@@ -126,7 +126,7 @@ module.exports = (bot) => {
       });
       await Counter.updateOne({}, { $inc: { count: 1 } }, { upsert: true });
     } catch (error) {
-      bot.sendMessage(chat_id, `${error.message}`, {
+      bot.sendMessage(chat_id, `${error.response.data.error}`, {
         reply_to_message_id: message_id,
       });
     }
