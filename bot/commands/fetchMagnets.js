@@ -68,32 +68,32 @@ module.exports = (bot) => {
         }
       );
       if (search_engine === "1337X") {
-        url = `${BASE_URL}/1337x`;
+        url = `${BASE_URL}1337x`;
       } else if (search_engine === "MagnetDL") {
-        url = `${BASE_URL}/magnetdl`;
+        url = `${BASE_URL}magnetdl`;
       } else if (search_engine === "BitSearch") {
-        url = `${BASE_URL}/bitsearch`;
+        url = `${BASE_URL}bitsearch`;
       } else if (search_engine === "Knaben") {
-        url = `${BASE_URL}/knaben`;
+        url = `${BASE_URL}knaben`;
       } else if (search_engine === "TorLock") {
-        url = `${BASE_URL}/torlock`;
+        url = `${BASE_URL}torlock`;
       } else if (search_engine === "Zooqle") {
-        url = `${BASE_URL}/zooqle`;
+        url = `${BASE_URL}zooqle`;
       } else if (search_engine === "GloTorrents") {
-        url = `${BASE_URL}/glotorrents`;
+        url = `${BASE_URL}glotorrents`;
       } else if (search_engine === "LimeTorrents") {
-        url = `${BASE_URL}/limetorrents`;
+        url = `${BASE_URL}limetorrents`;
       } else if (search_engine === "The Pirate Bay") {
-        url = `${BASE_URL}/thepiratebay`;
+        url = `${BASE_URL}thepiratebay`;
       } else if (search_engine === "KickassTorrents") {
-        url = `${BASE_URL}/kickasstorrents`;
+        url = `${BASE_URL}kickasstorrents`;
       } else if (search_engine === "TorrentGalaxy") {
-        url = `${BASE_URL}/torrentgalaxy`;
+        url = `${BASE_URL}torrentgalaxy`;
       }
       const response = await axios.post(
         url,
         {
-          search,
+          search: search,
         },
         {
           headers: {
