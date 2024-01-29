@@ -32,15 +32,12 @@ module.exports = (bot) => {
               { text: "The Pirate Bay", callback_data: "The Pirate Bay" },
             ],
             [
-              { text: "TorLock", callback_data: "TorLock" },
-              { text: "Zooqle", callback_data: "Zooqle" },
-            ],
-            [
               { text: "GloTorrents", callback_data: "GloTorrents" },
               { text: "LimeTorrents", callback_data: "LimeTorrents" },
             ],
             [
-              { text: "KickassTorrents", callback_data: "KickassTorrents" },
+              { text: "TorLock", callback_data: "TorLock" },
+              { text: "Zooqle", callback_data: "Zooqle" },
               { text: "TorrentGalaxy", callback_data: "TorrentGalaxy" },
             ],
           ],
@@ -68,7 +65,7 @@ module.exports = (bot) => {
           parse_mode: "HTML",
         }
       );
-     if (search_engine === "MagnetDL") {
+      if (search_engine === "MagnetDL") {
         url = `${BASE_URL}magnetdl`;
       } else if (search_engine === "BitSearch") {
         url = `${BASE_URL}bitsearch`;
@@ -84,8 +81,6 @@ module.exports = (bot) => {
         url = `${BASE_URL}limetorrents`;
       } else if (search_engine === "The Pirate Bay") {
         url = `${BASE_URL}thepiratebay`;
-      } else if (search_engine === "KickassTorrents") {
-        url = `${BASE_URL}kickasstorrents`;
       } else if (search_engine === "TorrentGalaxy") {
         url = `${BASE_URL}torrentgalaxy`;
       }
