@@ -19,12 +19,14 @@ Create a `.env` file inside the directory and fill in all the details.
 
 Example `.env` file:
 ```
-BOT_TOKEN=1234567890:ABCDEFGHIJKLMNOPQRSTUVWXYZ // Grab your telegram bot token from BotFather
+BOT_TOKEN=1234567890:ABCDEFGHIJKLMNOPQRSTUVWXYZ
 URL=http://localhost:10000/torrents/api/v1/
 TELE_GRAPH_URL=https://api.telegra.ph/createPage
-TELE_GRAPH_TOKEN=YOURTOKENHERE // Visit https://telegra.ph/api and grab your token
+TELE_GRAPH_TOKEN=YOURTOKENHERE /
 MONGODB_URI=EnterYourMongoDBUrlHere
 ```
+Grab your telegram bot token from BotFather
+Visit https://telegra.ph/api and grab your token
 
 ## Usage
 To run the bot, use the following command: ``` npm run dev ```
