@@ -24,19 +24,20 @@ module.exports = (bot) => {
         reply_markup: JSON.stringify({
           inline_keyboard: [
             [
-              { text: "1337X", callback_data: "1337X" },
               { text: "MagnetDL", callback_data: "MagnetDL" },
               { text: "BitSearch", callback_data: "BitSearch" },
             ],
             [
               { text: "Knaben", callback_data: "Knaben" },
+              { text: "The Pirate Bay", callback_data: "The Pirate Bay" },
+            ],
+            [
               { text: "TorLock", callback_data: "TorLock" },
               { text: "Zooqle", callback_data: "Zooqle" },
             ],
             [
               { text: "GloTorrents", callback_data: "GloTorrents" },
               { text: "LimeTorrents", callback_data: "LimeTorrents" },
-              { text: "The Pirate Bay", callback_data: "The Pirate Bay" },
             ],
             [
               { text: "KickassTorrents", callback_data: "KickassTorrents" },
@@ -67,9 +68,7 @@ module.exports = (bot) => {
           parse_mode: "HTML",
         }
       );
-      if (search_engine === "1337X") {
-        url = `${BASE_URL}1337x`;
-      } else if (search_engine === "MagnetDL") {
+     if (search_engine === "MagnetDL") {
         url = `${BASE_URL}magnetdl`;
       } else if (search_engine === "BitSearch") {
         url = `${BASE_URL}bitsearch`;
