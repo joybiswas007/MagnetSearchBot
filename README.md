@@ -22,7 +22,7 @@ Example `.env` file:
 BOT_TOKEN=1234567890:ABCDEFGHIJKLMNOPQRSTUVWXYZ
 URL=http://localhost:10000/torrents/api/v1/
 TELE_GRAPH_URL=https://api.telegra.ph/createPage
-TELE_GRAPH_TOKEN=YOURTOKENHERE /
+TELE_GRAPH_TOKEN=YOURTOKENHERE
 MONGODB_URI=EnterYourMongoDBUrlHere
 ```
 Grab your telegram bot token from BotFather
