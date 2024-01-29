@@ -38,7 +38,11 @@ module.exports = (bot) => {
             [
               { text: "TorLock", callback_data: "TorLock" },
               { text: "Zooqle", callback_data: "Zooqle" },
+            ],
+            [
               { text: "TorrentGalaxy", callback_data: "TorrentGalaxy" },
+              { text: "GkTorrent", callback_data: "GkTorrent" },
+
             ],
           ],
         }),
@@ -83,6 +87,8 @@ module.exports = (bot) => {
         url = `${BASE_URL}thepiratebay`;
       } else if (search_engine === "TorrentGalaxy") {
         url = `${BASE_URL}torrentgalaxy`;
+      } else if (search_engine === "GkTorrent") {
+        url = `${BASE_URL}gktorrent`;
       }
       const response = await axios.post(
         url,
